@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import classes from "./Projects.module.css";
 
 export async function projectsLoader() {
-  const response = await fetch("http://localhost:5000/api/projects");
+  const response = await fetch(`${import.meta.env.VITE_API_URL}/api/projects`);
 
   if (!response.ok) {
     throw new Response("Failed to fetch projects", {

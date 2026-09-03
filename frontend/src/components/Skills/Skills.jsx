@@ -1,7 +1,7 @@
 import classes from "./Skills.module.css";
 
 export async function skillsLoader() {
-  const response = await fetch("http://localhost:5000/api/skills");
+  const response = await fetch(`${import.meta.env.VITE_API_URL}/api/skills`);
 
   if (!response.ok) {
     throw new Response("Failed to fetch skills", {

@@ -4,7 +4,7 @@ import classes from "./ProjectDetails.module.css";
 
 export async function projectDetailsLoader({ params }) {
   const response = await fetch(
-    `http://localhost:5000/api/projects/${params.projectId}`
+    `${import.meta.env.VITE_API_URL}/api/projects/${params.projectId}`
   );
 
   if (!response.ok) {

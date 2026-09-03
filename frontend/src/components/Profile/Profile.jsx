@@ -52,7 +52,7 @@ export default function Profile({ profile }) {
 }
 
 export async function profileLoader() {
-  const response = await fetch("http://localhost:5000/api/profile");
+  const response = await fetch(`${import.meta.env.VITE_API_URL}/api/profile`);
 
   if (!response.ok) {
     throw new Response("Failed to fetch profile", {
