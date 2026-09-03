@@ -65,8 +65,14 @@
 .arrow {
   border: none;
   background: transparent;
+  color: #ffffff;
   font: inherit;
   font-size: 2rem;
   cursor: pointer;
   padding: 10px;
+  transition: transform 0.2s ease;
+}
+
+.arrow:hover {
+  transform: scale(1.2);
 }

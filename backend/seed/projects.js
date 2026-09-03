@@ -19,6 +19,26 @@ const projects = [
 
     video:
       "https://res.cloudinary.com/yscqfdjl/video/upload/v1787255718/uahtl40dynzdsoumotn3.mp4",
+    github:
+      "https://github.com/h1995tech/event-management",
+  },
+  {
+    name: "PlacePicker",
+
+    description:
+      "PlacePicker is an interactive React web application that allows users to explore and create a personalized collection of places they would like to visit. The application fetches available places from a Node.js backend and displays them dynamically. Users can select places, add them to their personal collection, and remove them when needed. The project demonstrates handling HTTP requests, asynchronous operations, React state management, side effects, loading states, and error handling.",
+
+    images: [
+      "https://res.cloudinary.com/yscqfdjl/image/upload/v1787401567/meemgsbr2bxyzsxlzcpv.png",
+      "https://res.cloudinary.com/yscqfdjl/image/upload/v1787401604/h9his2ucfthr9itakrlp.png",
+      "https://res.cloudinary.com/yscqfdjl/image/upload/v1787401645/kpiboh11yosbrrzqexxm.png",
+    ],
+
+    video:
+      "https://res.cloudinary.com/yscqfdjl/video/upload/v1787401474/q4jhavyto81wakw1ybds.mp4",
+
+    github:
+      "https://github.com/h1995tech/PlacePicker-React",
   },
 ];
 
