@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import classes from "./RootLayout.module.css";
 
@@ -8,6 +8,7 @@ export default function RootLayout() {
       <Navbar />
       <main className={classes.main}>
         <Outlet />
+        <ScrollRestoration />
       </main>
     </>
   );
