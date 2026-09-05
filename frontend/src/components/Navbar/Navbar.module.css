@@ -5,7 +5,7 @@
   transform: translateX(-50%);
 
   width: 90%;
-  max-width: 1200px;
+  max-width: 1000px;
   height: 70px;
 
   display: flex;
@@ -27,19 +27,23 @@
   z-index: 1000;
 }
 
-.logo a {
-  text-decoration: none;
-  color: #f8fafc;
-  font-size: 1.4rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
 .logo {
   text-decoration: none;
   color: #f8fafc;
+
   font-size: 1rem;
   font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #f8fafc;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+
   letter-spacing: 0.5px;
 }
 
@@ -50,16 +54,21 @@
 .list {
   display: flex;
   align-items: center;
+
   gap: 2rem;
+
   list-style: none;
 }
 
 .list a {
   text-decoration: none;
+
   color: #94a3b8;
+
   font-size: 1rem;
   font-weight: 500;
-  transition: all 0.3s ease;
+
+  transition: color 0.3s ease;
 }
 
 .list a:hover {
@@ -70,29 +79,12 @@
   color: #6c63ff !important;
 }
 
-.resumeBtn {
-  text-decoration: none;
-  padding: 0.8rem 1.6rem;
-
-  color: #fff;
-  font-weight: 600;
-
-  background: linear-gradient(135deg, #6c63ff, #8b5cf6);
-
-  border-radius: 999px;
-
-  transition: all 0.3s ease;
-}
-
-.resumeBtn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.35);
-}
-
 .navButton {
   background: transparent;
+
   border: none;
   outline: none;
+
   cursor: pointer;
 
   color: #94a3b8;
@@ -112,20 +104,15 @@
 @media (max-width: 900px) {
   .header {
     width: 94%;
-    padding: 0 1.25rem;
+    padding: 0 1.5rem;
   }
 
   .list {
-    gap: 1.2rem;
+    gap: 1.3rem;
   }
 
   .list a,
   .navButton {
-    font-size: 0.9rem;
-  }
-
-  .resumeBtn {
-    padding: 0.65rem 1rem;
     font-size: 0.9rem;
   }
 }
@@ -137,8 +124,8 @@
     top: 0.75rem;
 
     width: 94%;
-    height: auto;
     min-height: 60px;
+    height: auto;
 
     padding: 0.8rem 1rem;
 
@@ -150,32 +137,26 @@
   }
 
   .list {
-    gap: 0.8rem;
+    gap: 0.9rem;
   }
 
   .list a,
   .navButton {
     font-size: 0.8rem;
   }
-
-  .resumeBtn {
-    padding: 0.55rem 0.8rem;
-    font-size: 0.78rem;
-  }
 }
 
 /* Small phones */
 
-@media (max-width: 520px) {
+@media (max-width: 480px) {
   .header {
-    align-items: center;
-    gap: 0.7rem;
+    width: 96%;
 
     padding: 0.7rem 0.8rem;
   }
 
   .logo a {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   .list {
@@ -185,10 +166,5 @@
   .list a,
   .navButton {
     font-size: 0.72rem;
-  }
-
-  .resumeBtn {
-    padding: 0.5rem 0.65rem;
-    font-size: 0.7rem;
   }
 }

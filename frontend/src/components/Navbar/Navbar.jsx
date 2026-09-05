@@ -46,10 +46,6 @@ export default function Navbar() {
           </li>
         </ul>
       </nav>
-
-      <NavLink to="resume" className={classes.resumeBtn}>
-        Resume
-      </NavLink>
     </header>
   );
 }

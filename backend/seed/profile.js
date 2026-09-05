@@ -13,7 +13,7 @@ const profile = {
   profileImage:
     "https://res.cloudinary.com/yscqfdjl/image/upload/v1786136940/bruwgyfkapyddskp002a.jpg",
   resume:
-    "https://res.cloudinary.com/yscqfdjl/raw/upload/v1786365083/mc0lceca5zwiorbnrqkw",
+    "https://res.cloudinary.com/yscqfdjl/raw/upload/v1788640012/Hoorish_MERN_Stack_Developer.pdf",
   socialLinks: [
     {
       platform: "LinkedIn",
