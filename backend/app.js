@@ -5,7 +5,7 @@ import profileRoutes from "./routes/profileRoutes.js";
 import uploadRoutes from "./routes/uploadRoutes.js";
 import skillRoutes from "./routes/skillRoutes.js";
 import projectRoutes from "./routes/projectRoutes.js";
-
+import contactRoutes from "./routes/contactRoutes.js";
 dotenv.config();
 
 const app = express();
@@ -21,5 +21,6 @@ app.use("/api/profile", profileRoutes);
 app.use("/api/upload", uploadRoutes);
 app.use("/api/skills", skillRoutes);
 app.use("/api/projects", projectRoutes);
+app.use("/api/contact", contactRoutes);
 
 export default app;

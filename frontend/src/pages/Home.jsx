@@ -5,6 +5,7 @@ import Profile, { profileLoader } from "../components/Profile/Profile";
 import Skills, { skillsLoader } from "../components/Skills/Skills";
 
 import Projects, { projectsLoader } from "../components/Projects/Projects";
+import Contact from "../components/Contact/Contact";
 
 export async function homeLoader() {
   const profile = await profileLoader();
@@ -28,6 +29,8 @@ export default function Home() {
       <Skills skills={data.skills} />
 
       <Projects projects={data.projects} />
+
+      <Contact />
     </main>
   );
 }

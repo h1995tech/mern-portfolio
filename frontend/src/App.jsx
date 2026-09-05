@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 import ProjectDetails, { projectDetailsLoader, } from "./pages/ProjectDetails";
+import { contactAction } from "./components/Contact/Contact.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
         loader: homeLoader,
+        action: contactAction,
       },
       {
         path: "projects/:projectId",
