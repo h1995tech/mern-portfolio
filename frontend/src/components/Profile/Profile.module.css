@@ -1,14 +1,17 @@
 .profile {
   min-height: calc(100vh - 110px);
+
   display: flex;
   align-items: center;
 }
 
 .content {
   width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   gap: 5rem;
 }
 
@@ -18,28 +21,35 @@
 
 .role {
   margin: 0 0 1rem;
+
   font-size: 0.9rem;
   font-weight: 600;
+
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .text h1 {
   margin: 0;
+
   font-size: clamp(2.5rem, 5vw, 4.5rem);
+
   line-height: 1;
   letter-spacing: -0.04em;
 }
 
 .text h2 {
   margin: 1.5rem 0 0;
+
   font-size: 1.5rem;
   font-weight: 500;
 }
 
 .description {
   margin: 2rem 0 0;
+
   max-width: 600px;
+
   font-size: 1.05rem;
   line-height: 1.8;
 }
@@ -47,16 +57,22 @@
 .actions {
   display: flex;
   flex-wrap: wrap;
+
   gap: 0.8rem;
+
   margin-top: 2rem;
 }
 
 .actions a {
   padding: 0.75rem 1.2rem;
+
   border: 1px solid currentColor;
   border-radius: 999px;
+
   text-decoration: none;
+
   font-size: 0.9rem;
+
   transition: 0.2s ease;
 }
 
@@ -66,15 +82,137 @@
 
 .imageWrapper {
   flex-shrink: 0;
+
   width: 320px;
   height: 400px;
+
   overflow: hidden;
+
   border-radius: 1.5rem;
 }
 
 .imageWrapper img {
   width: 100%;
   height: 100%;
+
   display: block;
+
   object-fit: cover;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .content {
+    gap: 3rem;
+  }
+
+  .imageWrapper {
+    width: 280px;
+    height: 350px;
+  }
+
+  .text h2 {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .profile {
+    min-height: auto;
+
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+
+    justify-content: center;
+
+    gap: 2.5rem;
+
+    text-align: center;
+  }
+
+  .text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .role {
+    font-size: 0.8rem;
+  }
+
+  .text h1 {
+    font-size: clamp(2.3rem, 10vw, 3.5rem);
+    line-height: 1.05;
+  }
+
+  .text h2 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .description {
+    max-width: 600px;
+
+    margin: 1.5rem auto 0;
+
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .actions {
+    justify-content: center;
+
+    margin-top: 1.5rem;
+  }
+
+  .imageWrapper {
+    width: min(260px, 75vw);
+    height: 330px;
+  }
+}
+
+/* Small phones */
+
+@media (max-width: 480px) {
+  .profile {
+    padding-top: 105px;
+  }
+
+  .content {
+    gap: 2rem;
+  }
+
+  .imageWrapper {
+    width: 210px;
+    height: 270px;
+
+    border-radius: 1.2rem;
+  }
+
+  .text h1 {
+    font-size: 2.3rem;
+  }
+
+  .text h2 {
+    font-size: 1.05rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .actions a {
+    padding: 0.65rem 1rem;
+    font-size: 0.82rem;
+  }
 }

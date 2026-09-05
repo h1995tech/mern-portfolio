@@ -11,7 +11,14 @@ html {
 }
 
 body {
+  min-width: 320px;
   font-family: "Outfit", sans-serif;
   background: #1f2937;
   color: #f8fafc;
+  overflow-x: hidden;
+}
+
+img,
+video {
+  max-width: 100%;
 }

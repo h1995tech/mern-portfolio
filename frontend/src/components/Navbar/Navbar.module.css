@@ -15,6 +15,7 @@
   padding: 0 2rem;
 
   background: rgba(22, 27, 46, 0.7);
+
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 
@@ -50,17 +51,14 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-
   list-style: none;
 }
 
 .list a {
   text-decoration: none;
   color: #94a3b8;
-
   font-size: 1rem;
   font-weight: 500;
-
   transition: all 0.3s ease;
 }
 
@@ -74,7 +72,6 @@
 
 .resumeBtn {
   text-decoration: none;
-
   padding: 0.8rem 1.6rem;
 
   color: #fff;
@@ -89,7 +86,6 @@
 
 .resumeBtn:hover {
   transform: translateY(-2px);
-
   box-shadow: 0 8px 20px rgba(108, 99, 255, 0.35);
 }
 
@@ -100,6 +96,7 @@
   cursor: pointer;
 
   color: #94a3b8;
+
   font: inherit;
   font-weight: 500;
 
@@ -108,4 +105,90 @@
 
 .navButton:hover {
   color: #f8fafc;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .header {
+    width: 94%;
+    padding: 0 1.25rem;
+  }
+
+  .list {
+    gap: 1.2rem;
+  }
+
+  .list a,
+  .navButton {
+    font-size: 0.9rem;
+  }
+
+  .resumeBtn {
+    padding: 0.65rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .header {
+    top: 0.75rem;
+
+    width: 94%;
+    height: auto;
+    min-height: 60px;
+
+    padding: 0.8rem 1rem;
+
+    border-radius: 16px;
+  }
+
+  .logo a {
+    font-size: 1.1rem;
+  }
+
+  .list {
+    gap: 0.8rem;
+  }
+
+  .list a,
+  .navButton {
+    font-size: 0.8rem;
+  }
+
+  .resumeBtn {
+    padding: 0.55rem 0.8rem;
+    font-size: 0.78rem;
+  }
+}
+
+/* Small phones */
+
+@media (max-width: 520px) {
+  .header {
+    align-items: center;
+    gap: 0.7rem;
+
+    padding: 0.7rem 0.8rem;
+  }
+
+  .logo a {
+    font-size: 0.95rem;
+  }
+
+  .list {
+    gap: 0.55rem;
+  }
+
+  .list a,
+  .navButton {
+    font-size: 0.72rem;
+  }
+
+  .resumeBtn {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.7rem;
+  }
 }
