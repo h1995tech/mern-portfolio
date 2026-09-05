@@ -11,7 +11,7 @@ const profile = {
   description:
     "MERN Stack Developer with experience building scalable, responsive web applications using React.js, Node.js, Express.js, and MongoDB. Experienced in developing REST APIs, reusable UI components, and full-stack applications. Strong understanding of JavaScript, Git, and modern web development practices.",
   profileImage:
-    "https://res.cloudinary.com/yscqfdjl/image/upload/v1786136940/bruwgyfkapyddskp002a.jpg",
+    "https://res.cloudinary.com/yscqfdjl/image/upload/v1788637595/20220522_201904.jpg",
   resume:
     "https://res.cloudinary.com/yscqfdjl/raw/upload/v1788640012/Hoorish_MERN_Stack_Developer.pdf",
   socialLinks: [
