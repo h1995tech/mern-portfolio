@@ -95,6 +95,14 @@
   font-size: 0.95rem;
 }
 
+.successMessage {
+  color: #86efac;
+}
+
+.errorMessage {
+  color: #fca5a5;
+}
+
 @media (max-width: 768px) {
   .contact {
     width: 92%;

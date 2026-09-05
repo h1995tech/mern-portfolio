@@ -39,9 +39,10 @@ export default function Navbar() {
           </li>
 
           <li>
-            <button type="button" className={classes.navButton}>
+            <a href="#contact">Contact</a>
+            {/* <button type="button" className={classes.navButton}>
               Contact
-            </button>
+            </button> */}
           </li>
         </ul>
       </nav>

@@ -3,6 +3,7 @@ import {
   useActionData,
   useNavigation,
 } from "react-router-dom";
+import { useEffect, useRef } from "react";
 
 import classes from "./Contact.module.css";
 
@@ -45,14 +46,21 @@ export async function contactAction({ request }) {
 export default function Contact() {
   const actionData = useActionData();
   const navigation = useNavigation();
+  const formRef = useRef();
 
   const isSubmitting = navigation.state === "submitting";
+
+  useEffect(() => {
+    if (actionData?.success) {
+      formRef.current?.reset();
+    }
+  }, [actionData]);
 
   return (
     <section id="contact" className={classes.contact}>
       <h2>Contact</h2>
 
-      <Form method="post">
+      <Form method="post" ref={formRef}>
         <input
           type="text"
           name="name"
@@ -85,7 +93,15 @@ export default function Contact() {
         </button>
 
         {actionData && (
-          <p>{actionData.message}</p>
+          <p
+            className={
+              actionData.success
+                ? classes.successMessage
+                : classes.errorMessage
+            }
+          >
+            {actionData.message}
+          </p>
         )}
       </Form>
     </section>
